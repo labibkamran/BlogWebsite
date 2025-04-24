@@ -21,7 +21,50 @@
 .about-info:hover{
     transform: scale(1.01);
 }
-
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 1rem 2rem;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .logo img {
+    height: 36px;
+    width: 36px;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  nav li {
+    margin: 0 10px;
+  }
+  nav a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+  }
+  nav a:hover {
+    background-color: #0077cc;
+    color: #fff;
+  }
 .about-highlights {
     display: flex;
     flex-wrap: wrap;
