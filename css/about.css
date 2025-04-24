@@ -1,0 +1,116 @@
+.about-section {
+    padding-bottom: 5rem;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 3rem;
+}
+
+.about-info {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: var(--border-radius); /*using the  Variables defined in the common.css to keep to design consistent*/
+    box-shadow: var(--box-shadow);
+    color: #555;
+    line-height: 1.7;
+}
+
+.about-info:hover{
+    transform: scale(1.01);
+}
+
+.about-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.highlight {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f8f9fa;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+.highlight:hover{
+    transform: scale(1.1);
+}
+
+.highlight i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.highlight h3 {
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.team-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+
+.team-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-member {
+    flex: 1;
+    min-width: 200px;
+    max-width: 220px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-member h4 {
+    margin: 10px 0 5px;
+    color: var(--primary-color);
+}
+
+.team-member p {
+    color: #666;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .about-highlights {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+}
